@@ -34,7 +34,7 @@ function DeleteStudent() {
                     <td className='groupDeletePage'>{student.Student_group}</td>
                     <td>{student.FullName}</td>
                     <td style={{display: 'flex', justifyContent: 'end'}}>
-                      <button className="DeleteBtn" onClick={() => handleDelete(student)}>
+                      <button className="DeleteBtn" onClick={() => handleDelete(student.id)}>
                         <i aria-hidden="true">Удалить</i>
                       </button>
                     </td>
