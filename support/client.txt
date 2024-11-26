@@ -1,0 +1,2 @@
+1) /client
+2) npm start 

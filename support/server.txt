@@ -1,0 +1,4 @@
+1) /Server
+2) npm start 
+
+!!! Важно, чтобы был включен OS Panel 
