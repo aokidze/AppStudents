@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body, html{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App{
+  width: 1000px;
+  height: 768px;
+  background-color: #ccd6f647;
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+.Students{
+  height: 100%;
+}
+.nav{
+  width: 100%;
+  height: 48px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #757575;
+}
+
+.search, .student-menu,
+.teachers-menu,.settings{
+  display: inline-flex;
+  align-items: center;
+  margin: 0px 30px 0px 30px;
+  cursor: pointer;
+}
+.menu, .menu a{
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+.input-search{
+  height:15px;
+  border-radius: 15px;
+  margin-left: 10px;
+  padding: 5px;
+}
+
+.card-info{
+  width: 800px;
+  height: 600px;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.Avatar-circle{
+  background-color: #fff;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.HeadCard{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 84px;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+}
+.i1{
+  color: black;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.i2{
+  color: black;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #fff;
+}
+.custom-table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+}
+.custom-table tr {
+  background-color: #f2f2f2;
+}
+.custom-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #e6e6e6;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left, .right {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.left svg, .right svg {
+  margin: auto; 
+}
+.table-students {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-students th, .table-students td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.table-students th {
+  background-color: #f2f2f2;
+}
