@@ -26,17 +26,23 @@ function DeleteStudent() {
 
   return (
     <>
-          {students.map((student, index) => (
-            <tr key={index}>
-              <td>{student.Student_group}</td>
-              <td>{student.FullName}</td>
-              <td>
-                <button onClick={() => handleDelete(student.id)}>
-                  <i className="fa fa-trash" aria-hidden="true">Удалить</i>
-                </button>
-              </td>
-            </tr>
-          ))}
+          <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100%'}}>
+            <div className='card-info-delete'>
+                {students.map((student, index) => (
+                  <table className='TableDeleteStudent'>
+                  <tr key={index}>
+                    <td className='groupDeletePage'>{student.Student_group}</td>
+                    <td>{student.FullName}</td>
+                    <td style={{display: 'flex', justifyContent: 'end'}}>
+                      <button className="DeleteBtn" onClick={() => handleDelete(student)}>
+                        <i aria-hidden="true">Удалить</i>
+                      </button>
+                    </td>
+                  </tr>
+                  </table>
+                ))}
+            </div>
+          </div>
     </>
   );
 };
