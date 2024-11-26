@@ -1,10 +1,14 @@
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import React from 'react';
-import Teachers from '../Teachers/Teachers';
-import Students from '../Students/Student';
+import Teachers from '../Teachers/WiewTeachers';
+import Students from '../Students/WiewStudent';
 import StudentOptions from '../Students/StudentOptions';
 import CreateStudent from '../Students/CreateStudent';
 import DeleteStudent from '../Students/DeleteStudent';
+import TeachersOptions from '../Teachers/TeachersOption'
+import CreateTeachers from '../Teachers/CreateTeachers';
+import DeleteTeachers from '../Teachers/DeleteTeachers'
+
 function NavPage() {
     return (  
     <Router>
@@ -49,7 +53,7 @@ function NavPage() {
 
             </div>
             <div className='teachers-menu'>
-                <Link to="/Teachers">  
+                <Link to="/TeachersOptions">  
                         <a href="#">
                             <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1_150)">
@@ -134,9 +138,13 @@ function NavPage() {
       <Routes>
             <Route path="/Teachers" element={<Teachers />} />
             <Route path="/StudentOptions" element={<StudentOptions />} />
-            <Route path='/Wiew' element={<Students />}/>
-            <Route path='/Create' element={<CreateStudent />}/>
-            <Route path='/Delete' element={<DeleteStudent />}/>
+            <Route path="/TeachersOptions" element={<TeachersOptions />}/>
+            <Route path='/WiewStudent' element={<Students />}/>
+            <Route path='/CreateStudent' element={<CreateStudent />}/>
+            <Route path='/DeleteStudent' element={<DeleteStudent />}/>
+            <Route path='/WiewTeachers' element={<Teachers />}/>
+            <Route path='/CreateTeachers' element={<CreateTeachers />}/>
+            <Route path='/DeleteTeachers' element={<DeleteTeachers />}/>
         </Routes>
     </Router>
         
