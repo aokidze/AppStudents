@@ -4,7 +4,7 @@ import axios from 'axios';
 function DeleteStudent() {
   const [students, setStudents] = useState([]);
   useEffect(() => {
-    fetch('http://localhost:5000')
+    fetch('http://localhost:5000/Students')
       .then(response => response.json())
       .then(data => {
         data.forEach(item => {
@@ -15,9 +15,9 @@ function DeleteStudent() {
   }, []);
   const handleDelete = async (id) => {
     try {
-      // Send a DELETE request to the server to delete the student
+
       await axios.delete(`http://localhost:5000/delete-student/${id}`);
-      // Update the local state by filtering out the deleted student
+
       setStudents(students.filter(student => student.id !== id));
     } catch (error) {
       console.error(error);
@@ -48,3 +48,4 @@ function DeleteStudent() {
 };
 
 export default DeleteStudent;
+
